@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Management System</h1>
+        <form id="add-contact-form" class="form">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone (11 digits):</label></td>
+                    <td><input type="text" id="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email (optional):</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="special-interest">Special Interest:</label></td>
+                    <td><input type="checkbox" id="special-interest"></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Add Contact</button>
+        </form>
+
+        <form id="search-contact-form" class="form">
+            <label for="search-name">Search by Name:</label>
+            <input type="text" id="search-name">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <h2 class="contact-history-title">Contact History</h2>
+        <table id="contacts-table" class="contact-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Special Interest</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="contacts-list">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/frontend.js"></script>
+</body>
+</html>
